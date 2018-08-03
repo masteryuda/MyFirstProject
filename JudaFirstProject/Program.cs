@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace JudaFirstProject
 {
@@ -6,11 +7,7 @@ namespace JudaFirstProject
     {
         static void Main(string[] args)
         {
-            string name = "Juda";
-            StringExtension.PrintRevers(name);
-
-            string reversName = StringExtension.Revers(name);
-            StringExtension.Print(reversName);
+            File.WriteAllLines("C:\\Users\\Haludi\\OneDrive\\Documents\\stam.txt")
         }
     }
 

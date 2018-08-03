@@ -1,0 +1,8 @@
+.vs/
+CheckList.Web/bin/
+CheckList.Web/obj/
+third_party/Server/Logs
+third_party/Server/RavenData/System/Journals
+third_party/Server/RavenData/System/Temp
+node_modules
+third_party/RavenDbServer
