@@ -6,13 +6,17 @@ namespace JudaFirstProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string name = "Juda";
+            StringExtension.PrintRevers(name);
+
+            string reversName = StringExtension.Revers(name);
+            StringExtension.Print(reversName);
         }
     }
 
     class StringExtension
     {
-        public static void Revers(string str)
+        public static void Print(string str)
         {
             foreach (char ch in str)
             {
@@ -29,5 +33,20 @@ namespace JudaFirstProject
                 Console.Write(ch);
             }
         }
+
+        //"Juda"
+        public static string Revers(string str)
+        {
+            string ret = "";
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                char ch = str[str.Length - i - 1];
+                ret = ret + ch;
+            }
+
+            return ret;
+        }
+
     }
 }
